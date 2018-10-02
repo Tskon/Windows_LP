@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <title>Ремонт Окон</title>
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function () {
+                try {
+                    w.yaCounter46918845 = new Ya.Metrika({
+                        id: 46918845,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true,
+                        webvisor: true,
+                        trackHash: true,
+                        ut: "noindex"
+                    });
+                } catch (e) {
+                }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () {
+                    n.parentNode.insertBefore(s, n);
+                };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else {
+                f();
+            }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/46918845?ut=noindex" style="position:absolute; left:-9999px;" alt=""/>
+        </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+</head>
+
+<body>
+<style>
+    .btn_st {
+        max-width: 100%;
+    }
+</style>
+<div class="wrapper">
+    <header>
+        <div class="container">
+            <div class="col-xs-12">
+                <div class="wrap_header_content">
+                    <div class="wrap_logo">
+                        <a href="#">
+                            <img src="img/logo.png" alt=""/>
+                        </a>
+                    </div>
+                    <div class="navigation clearfix">
+                        <button type="button" class="navbar_toggle">
+                        </button>
+                        <div class="navbar_collapse">
+                            <ul>
+                                <li><a href="#section1">Главная</a></li>
+                                <li><a href="#section2">Виды ремонта</a></li>
+                                <li><a href="#section3">Порядок работы</a></li>
+                                <li><a href="#section4">О компании</a></li>
+                                <li><a href="#section5">КОНТАКТЫ</a></li>
+                            </ul>
+                            <div class="wrap_callback">
+                                <p><a class="tel" href="tel:+79219071779">+7(812)907-03-12</a></p>
+                                <p>
+                                    <a class="various callback_link" href="#callback">
+                                        <span></span>Заказать звонок</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section1" id="section1">
+        <div class="container">
+            <div class="col-xs-12">
+                <div class="wrap_content_section1">
+                    <h1>ОТРЕМОНТИРУЕМ ВАШЕ ОКНО <span>ЗА 2 ЧАСА</span></h1>
+                    <p>Срочный выезд мастера в день обращения</p>
+                    <div class="wrap_form_content_section1">
+                        <img src="img/img_section1.png" alt=""/>
+                        <div class="form_content_section1">
+                            <div class="form_content">
+                                <form action="mail.php" method="POST">
+                                    <input type="hidden" name="project_name" value="Ремонт окон">
+                                    <input type="hidden" name="form_subject" value="Заявка">
+                                    <p>Опишите Вашу проблему, и мастер приедет к Вам со всеми нужными запчастями</p>
+                                    <div class="form_group">
+                                        <textarea class="form_control" name="Описание" required
+                                                  placeholder="Например, дует из окна..."></textarea>
+                                    </div>
+                                    <p>Администратор перезвонит Вам <span>в течение 5 минут</span> и согласует время
+                                        прибытия мастра по ремонту</p>
+                                    <div class="form_group">
+                                        <input type="tel" name="Телефон" required="" class="form_control tel_input"
+                                               placeholder="Ваш телефон">
+                                    </div>
+                                    <button onsubmit="ga('send', 'event', 'form3', 'submit3');" class="btn_st"
+                                            type="submit">
+                                        <span></span> Оставить заявку
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap_bottom_text_section1">
+                        <div class="bottom_text_section1">
+                            <p>
+                                <span>Более <strong>90%</strong> клиентов</span>
+                                <br> рекомендуют наших мастеров своим знакомым. Убедитесь сами!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section2" id="section2">
+        <div class="container">
+            <div class="col-xs-12">
+                <div class="title_section">
+                    <h2>Виды ремонта</h2>
+                </div>
+                <div class="wrap_list_example">
+                    <ul>
+                        <li>
+                            <div class="example">
+                                <div class="example_img">
+                                    <a href="img/example/example1.jpg" class="fancybox">
+                                        <img src="img/example/sm_example1.jpg" alt=""/>
+                                    </a>
+                                </div>
+                                <div class="example_title">
+                                    <p>Регулировка
+                                        <br> и обслуживание окон</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="example">
+                                <div class="example_img">
+                                    <a href="img/example/example2.jpg" class="fancybox">
+                                        <img src="img/example/sm_example2.jpg" alt=""/>
+                                    </a>
+                                </div>
+                                <div class="example_title">
+                                    <p>Замена
+                                        <br> уплотнителя
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="example">
+                                <div class="example_img">
+                                    <a href="img/example/example3.jpg" class="fancybox">
+                                        <img src="img/example/sm_example3.jpg" alt=""/>
+                                    </a>
+                                </div>
+                                <div class="example_title">
+                                    <p>Ремонт и регулировка
+                                        <br> фурнитуры
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="example">
+                                <div class="example_img">
+                                    <a href="img/example/example4.jpg" class="fancybox">
+                                        <img src="img/example/sm_example4.jpg" alt=""/>
+                                    </a>
+                                </div>
+                                <div class="example_title">
+                                    <p>Утепление окон
+                                        <br>по шведской технологии GT-Listen
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="example">
+                                <div class="example_img">
+                                    <a href="img/example/example5.jpg" class="fancybox">
+                                        <img src="img/example/sm_example5.jpg" alt=""/>
+                                    </a>
+                                </div>
+                                <div class="example_title">
+                                    <p>Ремонт
+                                        <br> балконных дверей
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="example">
+                                <div class="example_img">
+                                    <a href="img/example/example6.jpg" class="fancybox">
+                                        <img src="img/example/sm_example6.jpg" alt=""/>
+                                    </a>
+                                </div>
+                                <div class="example_title">
+                                    <p>Ремонт
+                                        <br> деревянных окон
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="example">
+                                <div class="example_img">
+                                    <a href="img/example/example7.jpg" class="fancybox">
+                                        <img src="img/example/sm_example7.jpg" alt=""/>
+                                    </a>
+                                </div>
+                                <div class="example_title">
+                                    <p>Ремонт
+                                        <br> входных ПВХ-дверей
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="example">
+                                <div class="example_img">
+                                    <a href="img/example/example8.jpg" class="fancybox">
+                                        <img src="img/example/sm_example8.jpg" alt=""/>
+                                    </a>
+                                </div>
+                                <div class="example_title">
+                                    <p>Ремонт
+                                        <br> алюминиевых окон
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="example">
+                                <div class="example_img">
+                                    <a href="img/example/example9.jpg" class="fancybox">
+                                        <img src="img/example/sm_example9.jpg" alt=""/>
+                                    </a>
+                                </div>
+                                <div class="example_title">
+                                    <p>Замена
+                                        <br> стеклопакетов
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="example">
+                                <div class="example_img">
+                                    <a href="img/example/example11.jpg" class="fancybox">
+                                        <img src="img/example/sm_example11.jpg" alt=""/>
+                                    </a>
+                                </div>
+                                <div class="example_title">
+                                    <p>Установка
+                                        <br> Маскитных сеток
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="example">
+                                <div class="example_img">
+                                    <a href="img/example/example10.jpg" class="fancybox">
+                                        <img src="img/example/sm_example10.jpg" alt=""/>
+                                    </a>
+                                </div>
+                                <div class="example_title">
+                                    <p>Герметизация, избавление от плесени
+                                        <br>лоджий и балконов
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="example">
+                                <div class="example_img">
+                                    <a href="img/example/example12.jpg" class="fancybox">
+                                        <img src="img/example/sm_example12.jpg" alt=""/>
+                                    </a>
+                                </div>
+                                <div class="example_title">
+                                    <p>Монтаж
+                                        <br>подоконников и отливов
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section3" id="section3">
+        <div class="container">
+            <div class="col-xs-12">
+                <div class="title_section">
+                    <h2>Порядок работы</h2>
+                </div>
+                <div class="wrap_content_section3">
+                    <img src="img/img_section3.png" alt=""/>
+                    <div class="step_list">
+                        <div class="step">
+                            <span class="top_left_rad"></span>
+                            <span class="bot_left_rad"></span>
+                            <span class="top_right_rad"></span>
+                            <span class="bot_right_rad"></span>
+                            <div class="step_content">
+                                <div class="num_step">
+                                    <span>1</span>
+                                    <img src="img/step1.png" alt=""/>
+                                </div>
+                                <div class="step_text">
+                                    <h5>Вы звоните или оставляете заявку на сайте</h5>
+                                    <p>Спасибо, что выбрали нашу компанию! Звоните или обратитесь к нам через сайт - как
+                                        Вам удобнее</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <span class="top_left_rad"></span>
+                            <span class="bot_left_rad"></span>
+                            <span class="top_right_rad"></span>
+                            <span class="bot_right_rad"></span>
+                            <div class="step_content">
+                                <div class="num_step">
+                                    <span>2</span>
+                                    <img src="img/step2.png" alt=""/>
+                                </div>
+                                <div class="step_text">
+                                    <h5>Наш администратор уточняет у Вас, что неисправно</h5>
+                                    <p>По телефону мы уточняем, какие беспокойства доставляют Вам окна или двери, после
+                                        чего направляем Вам мастера с инструментами и запасными частями</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <span class="top_left_rad"></span>
+                            <span class="bot_left_rad"></span>
+                            <span class="top_right_rad"></span>
+                            <span class="bot_right_rad"></span>
+                            <div class="step_content">
+                                <div class="num_step">
+                                    <span>3</span>
+                                    <img src="img/step3.png" alt=""/>
+                                </div>
+                                <div class="step_text">
+                                    <h5>Мастер по ремонту бесплатно выезжает к Вам</h5>
+                                    <p>В удобное Вам время мастер прибудет в Ваш адрес, произведет диагностику
+                                        неисправностей и сообщает итоговую стоимость до копейки. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <span class="top_left_rad"></span>
+                            <span class="bot_left_rad"></span>
+                            <span class="top_right_rad"></span>
+                            <span class="bot_right_rad"></span>
+                            <div class="step_content">
+                                <div class="num_step">
+                                    <span>4</span>
+                                    <img src="img/step4.png" alt=""/>
+                                </div>
+                                <div class="step_text">
+                                    <h5>Мастер сразу же осуществляет ремонт в течение часа</h5>
+                                    <p>В течение часа после прибытия к Вам мастер устраняет неисправности, и Ваши окна
+                                        или двери снова в порядке!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap_btn">
+                            <a href="#section1" class="btn_st target_btn">
+                                <span></span> Оставить заявку
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section4" id="section4">
+        <div class="container">
+            <div class="col-xs-12">
+                <div class="title_section">
+                    <h2>О компании</h2>
+                </div>
+                <div class="wrap_advantages_list">
+                    <ul>
+                        <li>
+                            <div class="advantages_img">
+                                <img src="img/advantages/calendar.svg" alt=""/>
+                            </div>
+                            <h5>С 1998 года</h5>
+                            <p>Наша компания осуществляет
+                                <br> ремонт окон и дверей уже почти 20 лет!</p>
+                        </li>
+                        <li>
+                            <div class="advantages_img">
+                                <img src="img/advantages/garant.svg" alt=""/>
+                            </div>
+                            <h5>Гарантия 1 год</h5>
+                            <p>На все работы и запчасти мы в
+                                <br> обязательном порядке даем гарантию.</p>
+                        </li>
+                        <li>
+                            <div class="advantages_img">
+                                <img src="img/advantages/bell.svg" alt=""/>
+                            </div>
+                            <h5>Бесплатный вызов</h5>
+                            <p>Вы платите только за ремонт и запчасти.
+                                <br> Никаких переплат!</p>
+                        </li>
+                        <li>
+                            <div class="advantages_img">
+                                <img src="img/advantages/money_box.svg" alt=""/>
+                            </div>
+                            <h5>Лучшие цены</h5>
+                            <p>У нас свой штат специалистов, поэтому
+                                <br>цены самые низкие в Петербурге и
+                                <br> области!</p>
+                        </li>
+                        <li>
+                            <div class="advantages_img">
+                                <img src="img/advantages/setting.svg" alt=""/>
+                            </div>
+                            <h5>Срочный ремонт</h5>
+                            <p>Оперативный выезд мастера в день
+                                <br> обращения!
+                            </p>
+                        </li>
+                        <li>
+                            <div class="advantages_img">
+                                <img src="img/advantages/man.svg" alt=""/>
+                            </div>
+                            <h5>Опытные мастера</h5>
+                            <p>Только граждане РФ, прошедшие
+                                <br> обучение по работе со всеми видами
+                                <br> окон.
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="wrap_btn">
+                        <a href="#section1" class="btn_st target_btn">
+                            <span></span> Оставить заявку
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section5" id="section5">
+        <div id="map"></div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="col-xs-12">
+                <p>Ремонт окон. Все права защищены 2016 г.</p>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/libs.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<!-- modal callback -->
+<div class="modal_f" id="callback">
+    <div class="modal_st">
+        <div class="modal_content">
+            <h3>Заказать звонок</h3>
+            <div class="modal_form">
+                <form action="mail.php" method="POST">
+                    <input type="hidden" name="project_name" value="Ремонт окон">
+                    <input type="hidden" name="form_subject" value="Заказать звонок">
+                    <div class="form_group">
+                        <input type="text" class="form_control" name="имя" required="" placeholder="Ваше имя">
+                    </div>
+                    <div class="form_group">
+                        <input type="tel" class="form_control" name="телефон" required="" placeholder="Ваш телефон">
+                    </div>
+                    <button onsubmit="ga('send', 'event', 'form', 'submit');" type="submit" class="btn_st">
+                        <span></span>Отправить
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal thanks -->
+<div class="modal_f" id="thanks">
+    <div class="modal_st">
+        <div class="modal_content">
+            <h3>Сообщение отправлено</h3>
+            <p>Наш менеджер свяжеться с Вами!</p>
+        </div>
+    </div>
+</div>
+<div class="giftWrapper">
+    <div class="gift">
+        <form action="mail.php" method="POST" class="gift__form">
+            <input type="hidden" name="project_name" value="Ремонт окон">
+            <input type="hidden" name="form_subject" value="Заказать звонок">
+            <div class="form_group">
+                <input type="text" class="form_control form_control_gift" name="имя" required="" placeholder="Ваше имя">
+            </div>
+            <div class="form_group">
+                <input type="tel" class="form_control form_control_gift" name="телефон" required=""
+                       placeholder="Ваш телефон">
+            </div>
+            <button onsubmit="ga('send', 'event', 'form', 'submit');" type="submit" class="btn_st gift__btn">
+                <span></span>Отправить
+            </button>
+        </form>
+        <div>
+            <p>Сегодня для Вас специальный подарок! Набор по уходу за окнами</p>
+            <button type="button" class="btn_st gift__btn gift__toggle">
+                <span></span>Забрать
+            </button>
+        </div>
+
+    </div>
+    <div class="gift__showButton">Подарок</div>
+</div>
+
+
+<script type="text/javascript">
+    ymaps.ready(init);
+
+    var myMap,
+        myPlacemark;
+
+    function init() {
+
+        myMap = new ymaps.Map("map", {
+            center: [59.9215026, 30.3631309],
+            zoom: 16,
+            controls: [],
+
+        });
+        myPlacemark = new ymaps.Placemark([59.9195026, 30.3631309], {
+            hintContent: '<div class="bln"> <img src="img/logo.png" alt="" /><p>Офисы во всех районах города</p><div class="wrap_callback"><p><a class="tel" href="tel:+78129070312">+7(812)9070312</a></p><p><a class="various callback_link" href="#callback"><span></span>Заказать звонок</a></p></div></div>',
+            balloonContent: '<div class="bln"> <img src="img/logo.png" alt="" /><p>Офисы во всех районах города</p><div class="wrap_callback"><p><a class="tel" href="tel:+78129070312">+7(812)907-03-12</a></p><p><a class="various callback_link" href="#callback"><span></span>Заказать звонок</a></p></div></div>'
+        }, {
+            // balloonImageHref: 'img/ballon1.png', // Картинка заднего фона балуна
+            balloonLayout: "default#imageWithContent", // указываем что содержимое балуна кастомная херь
+            balloonContentSize: [300, 285], // размер нашего кастомного балуна в пикселях
+            // balloonImageSize: [413, 141],
+            balloonImageOffset: [-150, -310],
+            balloonShadow: false
+        });
+        myMap.geoObjects.add(myPlacemark);
+        myMap.behaviors.disable('scrollZoom');
+        myPlacemark.balloon.open();
+    };
+</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-43791713-2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments)
+    };
+    gtag('js', new Date());
+
+    gtag('config', 'UA-43791713-2');
+</script>
+
+</body>
+
+</html>
