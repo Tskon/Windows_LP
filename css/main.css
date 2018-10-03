@@ -61,3 +61,10 @@ body{font-family:"PTSansRegular"}.wrapper{max-width:1920px;margin:0 auto;overflo
     padding: 10px;
     width: 200px;
 }
+
+.whatsapp-logo{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+}
