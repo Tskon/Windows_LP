@@ -159,7 +159,9 @@
                                 </div>
                                 <div class="example_title">
                                     <p>Регулировка
-                                        <br> и обслуживание окон</p>
+                                        <br> и обслуживание окон
+                                        <br>от <span>290р.</span>
+                                    </p>
                                 </div>
                             </div>
                         </li>
@@ -173,6 +175,7 @@
                                 <div class="example_title">
                                     <p>Замена
                                         <br> уплотнителя
+                                        <br>от <span>110р.</span> п/м
                                     </p>
                                 </div>
                             </div>
@@ -201,6 +204,7 @@
                                 <div class="example_title">
                                     <p>Утепление окон
                                         <br>по шведской технологии GT-Listen
+                                        <br>от <span>1500р.</span>
                                     </p>
                                 </div>
                             </div>
@@ -229,6 +233,7 @@
                                 <div class="example_title">
                                     <p>Ремонт
                                         <br> деревянных окон
+                                        <br>от <span>3000р.</span>
                                     </p>
                                 </div>
                             </div>
@@ -271,6 +276,7 @@
                                 <div class="example_title">
                                     <p>Замена
                                         <br> стеклопакетов
+                                        <br>от <span>950р.</span>
                                     </p>
                                 </div>
                             </div>
@@ -285,6 +291,7 @@
                                 <div class="example_title">
                                     <p>Установка
                                         <br> маскитных сеток
+                                        <br>от <span>400р.</span>
                                     </p>
                                 </div>
                             </div>
@@ -299,6 +306,7 @@
                                 <div class="example_title">
                                     <p>Герметизация, избавление от плесени
                                         <br>лоджий и балконов
+                                        <br>от <span>3000р.</span>
                                     </p>
                                 </div>
                             </div>
@@ -313,6 +321,7 @@
                                 <div class="example_title">
                                     <p>Монтаж
                                         <br>подоконников и отливов
+                                        <br>от <span>390р.</span> п/м
                                     </p>
                                 </div>
                             </div>
@@ -590,13 +599,24 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43791713-2"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments)
-    };
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
+    gtag('config', 'UA-43791713-2', {'send_page_view': false});
 
-    gtag('config', 'UA-43791713-2');
+    function initRingostat(){
+        if (typeof(ga) !== 'undefined') {
+            ga('gtag_UA_43791713_2.require','ringostat');
+            gtag('event', 'page_view');
+            (function (d,s,u,e,p) {
+                p=d.getElementsByTagName(s)[0],e=d.createElement(s),e.async=1,e.src=u,p.parentNode.insertBefore(e, p);
+            })(document, 'script', 'https://script.ringostat.com/v4/65/65a61e81cd4820a9b8be66ee67111fd776509856.js');
+        } else {
+            setTimeout(initRingostat,200);
+        }
+    }
+
+    initRingostat();
+
 </script>
 
 </body>

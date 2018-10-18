@@ -609,6 +609,7 @@ function setMetrikaTargets() {
     submitOrder.addEventListener('click', function () {
         if (inputThemeOrder.value != '' && inputPhoneOrder.value != '') {
             yaCounter46918845.reachGoal('order');
+            ga('send', 'event', 'form', 'submit');
             $('.giftWrapper').fadeOut();
         }
     });
@@ -621,6 +622,7 @@ function setMetrikaTargets() {
     submitRing.addEventListener('click', function () {
         if (inputPhoneRing.value != '' && inputNameRing.value != '') {
             yaCounter46918845.reachGoal('zvonok');
+            ga('send', 'event', 'ring', 'submit');
             $('.giftWrapper').fadeOut();
         }
     });

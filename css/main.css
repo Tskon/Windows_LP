@@ -68,3 +68,9 @@ body{font-family:"PTSansRegular"}.wrapper{max-width:1920px;margin:0 auto;overflo
     right: 20px;
     z-index: 10;
 }
+
+.section2 .example_title span {
+    color: #ff7826;
+    font-weight: 900;
+    font-size: 20px;
+}
