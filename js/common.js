@@ -671,6 +671,7 @@ function giftHandler() {
             var inputPhone = document.querySelector('.giftWrapper.gift_active > div.gift > form > div:nth-child(4) > input');
             if (inputPhone.value != '' && inputName.value != '') {
                 yaCounter46918845.reachGoal('order');
+                ga('send', 'event', 'form', 'submit');
                 $('.giftWrapper').fadeOut();
             }
         });
