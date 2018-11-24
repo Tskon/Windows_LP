@@ -109,6 +109,9 @@
                             <img src="img/logo.png" alt=""/>
                         </a>
                     </div>
+                    <div class="mobilePhone">
+                        <a class="tel" href="tel:+78129071779">+7(812)907-03-12</a>
+                    </div>
                     <div class="navigation clearfix">
                         <button type="button" class="navbar_toggle">
                         </button>
@@ -636,21 +639,23 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'UA-43791713-2', {'send_page_view': false});
+    gtag('config', 'UA-43791713-2'
+      // {'send_page_view': false}
+      );
 
-    function initRingostat(){
-        if (typeof(ga) !== 'undefined') {
-            ga('gtag_UA_43791713_2.require','ringostat');
-            gtag('event', 'page_view');
-            (function (d,s,u,e,p) {
-                p=d.getElementsByTagName(s)[0],e=d.createElement(s),e.async=1,e.src=u,p.parentNode.insertBefore(e, p);
-            })(document, 'script', 'https://script.ringostat.com/v4/65/65a61e81cd4820a9b8be66ee67111fd776509856.js');
-        } else {
-            setTimeout(initRingostat,200);
-        }
-    }
-
-    initRingostat();
+    // function initRingostat(){
+    //     if (typeof(ga) !== 'undefined') {
+    //         ga('gtag_UA_43791713_2.require','ringostat');
+    //         gtag('event', 'page_view');
+    //         (function (d,s,u,e,p) {
+    //             p=d.getElementsByTagName(s)[0],e=d.createElement(s),e.async=1,e.src=u,p.parentNode.insertBefore(e, p);
+    //         })(document, 'script', 'https://script.ringostat.com/v4/65/65a61e81cd4820a9b8be66ee67111fd776509856.js');
+    //     } else {
+    //         setTimeout(initRingostat,200);
+    //     }
+    // }
+    //
+    // initRingostat();
 
 </script>
 
